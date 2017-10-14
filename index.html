@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html{
+				overflow: hidden;
+			}
+			#box{
+				background-color: skyblue;
+			}
+			.toolmenu{
+				position: absolute;
+			}
+			.openbutton{
+				width: 40px;
+				height: 40px;
+				background-color: snow;
+				border-radius: 50%;
+				font-size: 10px;
+				color: skyblue;
+				text-align: center;
+				line-height: 40px;
+			}
+			.tool{
+				display: none;
+				background-color: snow;
+				padding: 5px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="toolmenu">
+			<div class="openbutton">画图</div>
+			<ul class="tool">
+				<li>宽度：<input type="range"/></li>
+				<li>颜色：<input type="color"/></li>
+				<li><input type="button" value="清屏"></li>
+				<li><p>橡皮檫</p></li>
+				<li><a download="draw" class="download">下载</a></li>
+			</ul>
+		</div>
+		<canvas id="box"></canvas>
+	</body>
+	<script src="js/painter.js"></script>
+	<script src="js/painter-main.js"></script>
+</html>
+
